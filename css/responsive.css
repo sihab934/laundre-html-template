@@ -1,0 +1,539 @@
+/*media query*/
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1599.98px){
+    .container{
+        padding: 0 70px;
+    }
+
+    .logo img {
+        width: 140px;
+        height: 40px;
+        object-fit: contain;
+    }
+
+    nav ul{
+        justify-content: flex-end;
+        gap: 20px;
+        margin-right: 20px;
+    }
+    .menu_fixed {
+        display: none;
+    }
+
+    .hero{
+        height: 650px;
+        background-size: cover;
+        background-position: top;
+    }
+    .hero .container {
+        padding-top: 120px;
+    }
+    .hero_wrapper {
+        width: 60%;
+    }
+
+    .heading h1 {
+        font-size: 62px;
+        line-height: 110%;
+    }
+    .hero_wrapper p {
+        font-size: 14px;
+        line-height: 166.667%;
+    }
+
+    /*about us section*/
+    .about_us_section {
+        padding: 110px 0;
+    }
+    .about_us_wrapper {
+        gap: 80px;
+    }
+    .about_us_wrapper .text-area {
+        width: 45%;
+        gap: 80px;
+    }
+    .about_us_wrapper .text h2 {
+        font-size: 42px;
+    }
+    .about_us_wrapper .text p {
+        font-size: 14px;
+    }
+    .about_info {
+        width: 50%;
+    }
+    .about_us_wrapper .img_wrapper img {
+        width: 65%;
+        height: 400px;
+    }
+    .experience_box {
+        width: 350px;
+        height: 250px;
+        justify-content: center;
+        padding-top: 65px;
+        padding-left: 0;
+    }
+    .experience_box h1 {
+        font-size: 190px;
+    }
+    .experience_box span {
+        font-size: 16px;
+    }
+    .cirgle_bg {
+        right: 80px;
+    }
+    .about_info .info .info_box {
+        width: 160px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .info_box h3 {
+        font-size: 32px;
+    }
+    .info_box span {
+        font-size: 12px;
+    }
+    .about_info img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) {
+    .container{
+        padding: 0 40px;
+    }
+    .follow_us span{
+        font-size: 12px;
+    }
+    .follow_us {
+        gap: 12px;
+    }
+   .follow_us .social_icon {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .location span, .phone_number span, .email span {
+        font-size: 12px;
+    }
+    header .wrapper{
+        padding: 12px 0
+    }
+
+    .logo img {
+        width: 120px;
+    }
+     nav ul{
+        width: auto;
+    }
+     nav ul li a{
+        font-size: 14px;
+    }
+
+    header .wrapper button {
+        width: 220px;
+        height: 35px;
+    }
+    .hero_wrapper {
+        width: 70%;
+    }
+    svg.header_bg {
+        width: 301px;
+        bottom: -16px;
+        left: 57px;
+    }
+
+    /*about us section*/
+    .about_us_wrapper .text h2 {
+        font-size: 32px;
+    }
+    .about_us_wrapper .text p {
+        font-size: 12px;
+    }
+    .discover_more_btn {
+        width: 164px;
+        height: 50px;
+    }
+    .discover_more_btn span {
+        font-size: 12px;
+    }
+    .discover_more_btn svg{
+        width: 12px;
+        height: 12px;
+    }
+    .about_us_wrapper .img_wrapper img {
+        width: 70%;
+        height: 340px;
+    }
+    .experience_box {
+        padding-top: 50px;
+    }
+    .experience_box h1 {
+        font-size: 150px;
+    }
+    .cirgle_bg {
+        top: 15px;
+    }
+    .about_info .info{
+        margin-bottom: 100px;
+    }
+    .about_info .info .info_box {
+        width: 130px;
+        height: 130px;
+    }
+    .info_box h3 {
+        font-size: 24px;
+    }
+    .about_info img {
+        height: 280px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+    .container{
+        padding: 0 36px;
+    }
+    .follow_us span{
+        font-size: 10px;
+    }
+    .follow_us {
+        width: 166px;
+        gap: 8px;
+    }
+   .follow_us .social_icon {
+        gap: 6px;
+    }
+    .social_icon a svg {
+        height: 10px;
+    }
+    .location span, .phone_number span, .email span {
+        font-size: 10px;
+    }
+
+    .contact_info svg {
+        width: 13px;
+        height: 12px;
+    }
+    .logo img {
+        width: 100px;
+    }
+     nav ul{
+        gap: 10px;
+    }
+     nav ul li a{
+        font-size: 12px;
+        gap: 3px;
+    }
+    
+    .about_us {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    header .wrapper button {
+        width: 180px;
+        font-size: 14px;
+    }
+    header .wrapper button svg{
+         width: 12px;
+    }
+
+    .hero{
+        height: 530px;
+    }
+    .hero .container {
+        padding-top: 0;
+    }
+    .hero_wrapper {
+        width: 65%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero_wrapper .dry_cln_expert {
+        width: 170px
+    }
+    .dry_cln_expert span {
+        font-size: 12px;
+    }
+
+    .heading h1 {
+        font-size: 46px;
+    }
+    svg.header_bg {
+        bottom: 14px;
+        left: 39px;
+        width: 230px;
+    }
+
+    .book_laundry_now {
+        width: 150px;
+        height: 50px;
+    }
+    .book_laundry_now span {
+        font-size: 12px;
+    }
+    .btn_review {
+        gap: 20px;
+    }
+    .images{
+        width: 135px;
+        align-items: center;
+    }
+    .images img {
+        width: 40px;
+        height: 40px;
+    }
+    .images img:nth-child(2) {
+        left: 30px;
+    }
+    .images img:nth-child(3) {
+        left: 60px;
+    }
+    .images img:nth-child(4) {
+        left: 90px;
+    }
+    .clients_review {
+        gap: 10px;
+    }
+    .icon_text {
+        gap: 5px;
+    }
+    .icon_text span{
+        font-size: 14px;
+    }
+
+     /*about us section*/
+    .about_us_section {
+        padding: 80px 0;
+    }
+    .about_us_wrapper {
+        gap: 40px;
+    }
+    .about_our_company {
+        width: 170px;
+    }
+    .about_our_company span {
+        font-size: 12px;
+    }
+    .about_us_wrapper .text h2 {
+        font-size: 28px;
+    }
+    .discover_more_btn {
+        width: 160px;
+        height: 40px;
+    }
+    .about_us_wrapper .img_wrapper img {
+        height: 300px;
+    }
+    .experience_box {
+        width: 200px;
+        height: 160px;
+        gap: 10px;
+        margin-left: -107px;
+    }
+    .experience_box h1 {
+        font-size: 100px;
+    }
+    .experience_box span {
+        font-size: 12px;
+    }
+    .cirgle_bg {
+        width: 60px;
+        height: 60px;
+        right: 71px;
+        top: 31px;
+    }
+    .about_info .info{
+        margin-bottom: 95px;
+    }
+    .about_info .info .info_box {
+        width: 105px;
+        height: 105px;
+    }
+    .info_box h3 {
+        font-size: 20px;
+    }
+    .info_box span {
+        font-size: 10px;
+    }
+    .about_info img {
+        height: 250px;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px){
+    .location span, .phone_number span, .email span {
+        display: none;
+    }
+    .menu_fixed{
+        display: block;
+    }
+    
+    header .wrapper{
+        padding: 12px 0
+    }
+
+    .logo img {
+        width: 100px;
+    }
+     nav ul{
+        display: none;
+    }
+    header .wrapper button {
+        display: none;
+    }
+    .menu_btn{
+        display: block;
+        cursor: pointer;
+    }
+    .hero_wrapper {
+        width: 100%;
+        align-items: center;
+    }
+    .heading h1 {
+        text-align: center;
+    }
+    svg.header_bg {
+        bottom: 11px;
+        left: 143px;
+    }
+    .hero_wrapper p {
+        font-size: 14px;
+        text-align: center;
+    }
+    /*about us section*/
+    .about_us_section {
+        padding: 60px 0;
+    }
+    .about_us_wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 100px;
+    }
+    .about_us_wrapper .text-area {
+        width: 100%;
+        gap: 60px;
+    }
+    .about_us_wrapper .img_wrapper {
+        align-items: center;
+    }
+    .experience_box {
+        width: 250px;
+        height: 170px;
+    }
+    .cirgle_bg {
+        right: 93px;
+    }
+    .about_info {
+        width: 100%;
+        align-items: center;
+    }
+    .about_info .info{
+        margin-bottom: 60px;
+    }
+}
+
+
+/*mobile phone*/
+@media (max-width: 575px){     
+     .container{
+        padding: 0 20px;
+    }
+    .hero{
+        background-position: calc(100% - -194px) center;
+    }
+    .heading h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    svg.header_bg {
+        bottom: -2px;
+        left: 85px;
+        width: 150px;
+    }
+    .hero_wrapper p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .btn_review {
+        flex-direction: column-reverse;
+    }
+    .images{
+        width: 105px;
+    }
+    .images img {
+        width: 30px;
+        height: 30px;
+    }
+    .images img:nth-child(2) {
+        left: 22px;
+    }
+    .images img:nth-child(3) {
+        left: 45px;
+    }
+    .images img:nth-child(4) {
+        left: 68px;
+    }
+    .clients_review {
+        gap: 10px;
+    }
+    .icon_text {
+        gap: 5px;
+    }
+    .icon_text span{
+        font-size: 12px;
+    }
+    .star_icon svg {
+        width: 12px;
+    }
+      /*about us section*/
+    .about_our_company {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about_us_wrapper .text h2 {
+        font-size: 24px;
+    }
+    .about_us_wrapper .text p {
+        font-size: 12px;
+    }
+    .discover_more_btn span {
+        font-size: 12px;
+    }
+    .discover_more_btn svg{
+        width: 12px;
+        height: 12px;
+    }
+    .experience_box {
+        padding-top: 50px;
+    }
+    .cirgle_bg {
+        right: 34%;
+    }
+    .about_info .info{
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .about_info .info .info_box {
+        width: 80px;
+        height: 80px;
+    }
+    .info_box h3 {
+        font-size: 16px;
+    }
+    .info_box span {
+        font-size: 8px;
+    }
+    .about_info img {
+        height: 200px;
+    }
+}
