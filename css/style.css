@@ -842,6 +842,9 @@ img.img_btn{
 }
 
 /*slick autoplay css*/
+.team_members .slick-list {
+    margin: 0 -10px !important;
+}
 ul.slick-dots {
     display: flex;
     justify-content: center;
