@@ -8,6 +8,36 @@ $(document).ready(function(){
       $("#navPhone").addClass("hidden");
     });
 
+    //hero slider
+    $('.hero_slider').slick({
+      dots: false,
+      arrows: true,
+      prevArrow: "<span class='left-arrow'><i class='bx bx-left-arrow-alt'></i></span>", // Custom previous arrow
+      nextArrow: "<span class='right-arrow'><i class='bx bx-right-arrow-alt'></i></span>", // Custom next arrow
+      autoplay: false,
+      autoplaySpeed: 1000
+    });
+    
+    //services section img hide show
+    $(".s_item_img").hide();
+    $(".item-2 .s_item_img").show(); 
+    $(".item-2 .read_more_btn").hide();
+    $(".item-2 .cng-col").addClass("activ-color");
+
+    // Hover behavior on .read_more_btn
+    $(".read_more_btn").hover(function () {
+        $(".s_item_img").hide();
+        $(".read_more_btn").show();
+        
+ 
+        $(this).closest(".services_item").find(".s_item_img").show();
+        $(this).hide();
+
+        $(".cng-col").removeClass("activ-color");
+        $(this).closest(".services_item").find(".cng-col").addClass("activ-color");
+    });
+
+
     //popup video for video area
     $('.popup-video').magnificPopup({
       type: 'iframe',
@@ -36,7 +66,21 @@ $(document).ready(function(){
       autoplay: true, 
       autoplaySpeed: 2000, 
       dots: true, 
-      arrows: false
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 992, // applies below 992px
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 820, // < 820px
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
     });
 
     // Initially hide all hidden_details, then show the one for .hiw_item3
@@ -50,15 +94,29 @@ $(document).ready(function(){
       }
     );
 
-
    $('.testimonial-slider').slick({
       slidesToShow: 3, 
       slidesToScroll: 1, 
-      autoplay: false, 
+      autoplay: true, 
       autoplaySpeed: 1000, 
       dots: false, 
-      arrows: false
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 992, // applies below 992px
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 622, 
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
+    
     setInterval(function () {
       $('#testimonial-slider_ltr').slick('slickNext'); 
     }, 1500);
