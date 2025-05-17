@@ -1,6 +1,6 @@
 /*media query*/
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1599.98px){
+@media (max-width: 1620px){
     .container{
         padding: 0 70px;
     }
