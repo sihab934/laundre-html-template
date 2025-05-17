@@ -868,6 +868,7 @@
     /*How it works*/
     .h_wrapper {
         flex-direction: column;
+        align-items: flex-start;
     }
     .h_wrapper h2,
     .h_wrapper p {
