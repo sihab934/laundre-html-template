@@ -64,8 +64,14 @@ p{
 }
 .follow_us .social_icon a{
     line-height: 15px;
+    
 }
-
+.social_icon a path{
+    transition: all 0.3s;
+}
+.social_icon a:hover path{
+    opacity: 1;
+}
 .contact_info {
     display: flex;
     align-items: center;
@@ -95,16 +101,17 @@ p{
 }
 
 /*Header area*/
-header .wrapper {
+.main-menu-area .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 18px 0 19px 0;
 }
-header .logo{
+
+.main-menu-area .logo{
     height: 40px;
 }
-header .logo a{
+.main-menu-area .logo a{
     height: 100%;
     display: inline-block;
 }
@@ -120,10 +127,65 @@ nav ul {
 nav ul li a {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
     color: #142137;
     font-weight: 500;
+    transition: 0.3s;
+    padding: 10px 0;
 }
+.after-icon::after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    margin-left: 5px; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M9 1L5 5L1 1" stroke="%23142137" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    transform: all 0.3s;
+}
+nav ul li a:hover {
+    color: #4375E7;
+}
+nav ul li a.after-icon:hover::after{
+     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M9 1L5 5L1 1" stroke="%234375E7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+/*Drop down menu*/
+.dropdown{
+    position: relative;
+}
+.submenu {
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: -36px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 0;
+    width: 250px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    border-bottom: 1px dashed #142137;
+}
+.submenu li:last-child a {
+     border-bottom: none;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 
 .flex_btns {
     display: flex;
@@ -133,7 +195,7 @@ nav ul li a {
 .menu_btn{
     display: none;
 }
-header .wrapper button {
+.main-menu-area .wrapper button {
     width: 220px;
     height: 44px;
     display: flex;
@@ -150,7 +212,7 @@ header .wrapper button {
     cursor: pointer;
     position: relative;
 }
-header .wrapper button::before,
+.main-menu-area .wrapper button::before,
 .discover_more_btn::before,
 .blog_h_wrapper button::before {
     content: "";
@@ -163,17 +225,17 @@ header .wrapper button::before,
     z-index: -1;
     transition: all 0.5s;
 }
-header .wrapper button:hover::before,
+.main-menu-area .wrapper button:hover::before,
 .discover_more_btn:hover::before,
 .blog_h_wrapper button:hover::before {
     transform: scaleX(1);
 }
-header .wrapper button:hover,
+.main-menu-area .wrapper button:hover,
 .discover_more_btn:hover span,
 .blog_h_wrapper button:hover {
     color: #FFFFFF;
 }
-header .wrapper button:hover path,
+.main-menu-area .wrapper button:hover path,
 .discover_more_btn:hover path,
 .blog_h_wrapper button:hover path {
     transition: all 0.6s;
@@ -332,8 +394,14 @@ svg.header_bg {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.3s;
 }
-
+.book_laundry_now:hover {
+    background-color: white;
+}
+.book_laundry_now:hover span{
+    color: #4375E7;
+}
 .book_laundry_now span{
     color: #FFF;
     font-size: 15px;
@@ -415,7 +483,8 @@ svg.header_bg {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-    border: 1px solid #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.331);
+     transition: all 0.3s;
 }
 .right-arrow i,
 .left-arrow i {
@@ -435,9 +504,24 @@ svg.header_bg {
     border-radius: 50%;
     cursor:pointer;
     z-index: 10;
-    border: 1px solid #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.331);
+    transition: all 0.3s;
+}
+.right-arrow:hover,
+.left-arrow:hover{
+    border: 1px solid white;
 }
 
+.hero_slider{
+    position: relative;
+}
+.hero_slider ul.slick-dots{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin: 0 auto;
+}
+    
 /*about us section*/
 .about_us_section{
     padding: 150px 0;

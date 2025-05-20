@@ -425,7 +425,7 @@
     .location span, .phone_number span, .email span {
         font-size: 12px;
     }
-    header .wrapper{
+    .main-menu-area .wrapper{
         padding: 12px 0
     }
 
@@ -439,7 +439,7 @@
         font-size: 14px;
     }
 
-    header .wrapper button {
+    .main-menu-area .wrapper button {
         width: 220px;
         height: 35px;
     }
@@ -671,23 +671,29 @@
         width: 100px;
     }
      nav ul{
-        gap: 10px;
+        gap: 14px;
     }
      nav ul li a{
-        font-size: 12px;
-        gap: 3px;
+        font-size: 10px;
     }
-    
+    .after-icon::after{
+        width: 7px;
+        height: 6px;
+    }
+
+    .hero_slider ul.slick-dots{
+        bottom: 30px;
+    }
     .about_us {
         margin-left: 0;
         margin-right: 0;
     }
 
-    header .wrapper button {
+    .main-menu-area .wrapper button {
         width: 180px;
         font-size: 14px;
     }
-    header .wrapper button svg{
+    .main-menu-area .wrapper button svg{
          width: 12px;
     }
 
@@ -951,16 +957,39 @@
     section .container h2{
         font-size: 28px;
     }
+    .location,
+    .phone_number,
+    .email{
+        position: relative;
+    }
+
     .location span, .phone_number span, .email span {
         display: none;
+        position: absolute;
+        top: 12px;
+        right: 25px;
+        z-index: 1000;
+        width: 200px;
+        text-align: end;
+        font-size: 8px;
+        
+    }
+    .email span{
+        right: 10px;
+    }
+    .location:hover .show,
+    .phone_number:hover .show,
+    .email:hover .show{
+        display: block;
     }
     .menu_fixed{
         display: block;
     }
     
-    header .wrapper{
+    .main-menu-area .wrapper{
         padding: 12px 0
     }
+    
 
     .logo img {
         width: 100px;
@@ -968,7 +997,29 @@
      nav ul{
         display: none;
     }
-    header .wrapper button {
+     #nav_phone ul li{
+        width: 100%;
+    }
+
+    .after-icon::after{
+        width: 7px;
+        height: 6px;
+    }
+    /*Drop down menu*/
+    .dropdown{
+        position: relative;
+    }
+    .submenu {
+        display: none !important;
+        position: static;
+    }
+
+    .dropdown:hover .submenu {
+        display: block !important;
+    }
+
+
+    .main-menu-area .wrapper button {
         display: none;
     }
     .menu_btn{
@@ -987,19 +1038,23 @@
         left: 143px;
     }
     .hero {
-        height: 580px;
+        height: 650px;
     }
     .hero_wrapper p {
         font-size: 14px;
         text-align: center;
     }
     .left-arrow {
-        top: 86%;
-        right: 52%;
+        top: 82%;
+        right: 48%;
     }
     .right-arrow {
-        top: 86%;
-        right: 40%;
+        top: 82%;
+        right: 38%;
+    }
+    .hero_slider ul.slick-dots {
+        bottom: 25px;
+        left: 50%;
     }
     /*about us section*/
     .about_us_section {
@@ -1190,14 +1245,16 @@
     .left-arrow {
         width: 40px;
         height: 40px;
-        top: 88%;
-        right: 52%;
+        right: 53%;
     }
     .right-arrow {
         width: 40px;
         height: 40px;
-        top: 88%;
-        right: 38%;
+        right: 40%;
+    }
+    .hero_slider ul.slick-dots {
+        bottom: 37px;
+        transform: translateX(-50%);
     }
     .btn_review {
         flex-direction: column-reverse;

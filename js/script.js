@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     //hero slider
     $('.hero_slider').slick({
-      dots: false,
+      dots: true,
       arrows: true,
       prevArrow: "<span class='left-arrow'><i class='bx bx-left-arrow-alt'></i></span>", // Custom previous arrow
       nextArrow: "<span class='right-arrow'><i class='bx bx-right-arrow-alt'></i></span>", // Custom next arrow
